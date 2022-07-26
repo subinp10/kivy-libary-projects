@@ -1,0 +1,90 @@
+
+WidgetExample:
+<WidgetExample>:
+    cols:3
+    ToggleButton:
+        text : root.togg
+        size_hint:None,1
+        width:"100dp"
+        font_size : "40dp"
+        on_state : root.toggles(self)
+    Button:
+        text:"count"
+        font_size:"50dp"
+        on_press: root.buttonclick()
+        disabled:root.enable
+    Label:
+        text : root.my_text
+        font_name:"lcd.ttf"
+        font_size:"80dp"
+        color:0,0.5,1,1
+<ScrollViewExample@ScrollView>:
+<PageLayoutExample@PageLayout>:
+    StackLayoutExample:
+    ScrollViewExample    
+    GridLayoutExample:
+    BoxLayoutExample:
+    AnchorLayoutExample:
+<StackLayoutExample>:
+    size_hint:1,None
+    height:4000
+<GridLayoutExample>:
+    rows:3
+    cols:2
+    Button:
+          
+        text:"a"
+      #  size_hint: .2,.2
+    
+    BoxLayoutExample: 
+        
+    Button:
+          
+        text:"c"
+     #   size_hint: .2,.2
+    Button:
+          
+        text:"d"
+     #   size_hint: .2,.2
+   
+    
+
+<AnchorLayoutExample>:
+    anchor_x:"right"
+    anchor_y:"bottom"
+    BoxLayout:
+        size_hint:.5,.5
+        spacing:"10dp"
+        Button:
+           
+            text:"a"
+            size_hint: .2,.2
+       
+        Button:
+    
+            text:"b"
+            size_hint:.2,.2
+<BoxLayoutExample>:
+    spacing :"10dp"
+    Button:
+        
+        text:"a"
+        size_hint:.5,.5
+        pos_hint: {"center_y":.5}
+        #size:"40dp","40dp"
+    BoxLayout:
+        orientation:"vertical"
+        spacing:"10dp"
+        Button
+            text:"b1"
+        Button
+            text:"b2"
+        Button
+            text:"b3"
+        Button
+            text:"b4"
+            
+
+
+    Label
+        text:"c" 

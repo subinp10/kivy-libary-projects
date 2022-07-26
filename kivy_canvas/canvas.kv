@@ -1,0 +1,36 @@
+CanvasExample3:
+<CanvasExample3>:
+    
+<CanvasExample2>:
+    Button:
+        text:"circle x"
+        size:"100","100"
+        on_press:root.cb()
+    Button:
+        text:"circle y"
+        size:"100","100"
+        on_press:root.cirbutt()
+        pos:"100","0"
+<CanvasExample1>
+    
+    canvas:
+        Line:
+            points:(self.width/2,0,self.width/2,self.height)
+        Line:   
+            points:(0,self.height/2,self.width,self.height/2)
+<CanvasExample>:
+    canvas:
+        Rectangle:
+            pos:dp(100),dp(100)   
+            Line:
+                circle:(500,200,100)
+                width:1
+            
+        Line:
+            ellipse:(400,400,50,100)
+            width:1
+        Line:
+            points:(400,0,700,20)
+
+            
+       
